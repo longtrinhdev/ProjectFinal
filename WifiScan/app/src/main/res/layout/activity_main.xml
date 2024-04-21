@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="#DDFAF8"
+    android:orientation="vertical"
+    android:padding="12dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="196dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/haui" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="Ứng Dụng Thu Thập Dữ Liệu WiFi"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="22sp" />
+
+
+    <EditText
+        android:id="@+id/edt_ten_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/custom_edit_text_tao_file"
+        android:hint="Nhập tên file"
+        android:inputType="text"
+        android:drawableStart="@drawable/file"
+        android:drawablePadding="16dp"
+        android:padding="16dp"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_marginStart="54dp"
+            android:layout_marginEnd="54dp"
+            android:layout_marginTop="64dp"
+            android:layout_height="55dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_tao_file"
+                style="@android:style/Widget.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button"
+                android:drawableStart="@drawable/tabler_file"
+                android:drawablePadding="54dp"
+                android:padding="17dp"
+                android:text="Tạo File"
+                android:textSize="17sp"
+                android:textStyle = "bold"
+                android:gravity = "start|center"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+</LinearLayout>

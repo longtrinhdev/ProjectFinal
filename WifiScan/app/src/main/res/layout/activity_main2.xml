@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDFAF8"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity2">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/wifi" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="end|center_vertical"
+                android:text="File: "
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtTenFile"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="3dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:lines="2"
+                android:text="appname"
+                android:textStyle="bold"
+                android:textColor="#0831C5"
+                android:textSize="20sp" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_marginTop="32dp"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_quet"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                style="@android:style/Widget.Button"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:layout_marginEnd="16dp"
+                android:textSize="20sp"
+                android:drawablePadding="4dp"
+                android:padding="12dp"
+                android:drawableStart="@drawable/wifi_scanner"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Quét wifi" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_back"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                style="@android:style/Widget.Button"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:layout_marginStart="16dp"
+                android:drawableStart="@drawable/logout"
+                android:drawablePadding="4dp"
+                android:padding="12dp"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Thoát" />
+        </TableRow>
+
+    </TableLayout>
+
+
+    <EditText
+        android:id="@+id/edt_nhap_so_lan_quet"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/custom_edit_text_tao_file"
+        android:hint="Số lần quét"
+        android:padding="16dp"
+        android:drawableStart="@drawable/number"
+        android:drawablePadding="16dp"
+        android:textStyle="bold"
+        android:inputType="numberSigned"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edt_nhap_OX"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="@drawable/custom_edit_text_tao_file"
+        android:layout_marginTop="56dp"
+        android:drawablePadding="16dp"
+        android:drawableStart="@drawable/address"
+        android:inputType="numberDecimal"
+        android:padding="16dp"
+        android:hint="OX"/>
+
+    <EditText
+        android:id="@+id/edt_nhap_OY"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:drawableStart="@drawable/address"
+        android:drawablePadding="16dp"
+        android:background="@drawable/custom_edit_text_tao_file"
+        android:layout_marginTop="16dp"
+        android:inputType="numberDecimal"
+        android:padding="16dp"
+        android:hint="OY"/>
+
+    <EditText
+        android:id="@+id/edt_nhap_OZ"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:drawableStart="@drawable/address"
+        android:drawablePadding="16dp"
+        android:inputType="numberDecimal"
+        android:background="@drawable/custom_edit_text_tao_file"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:hint="OZ"/>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hinh2"
+    android:orientation="vertical"
+    tools:context=".Activity_Search">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#BEF1F8"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="Danh sách sinh viên"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/edt_input_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/custom_search_editext"
+        android:drawableEnd="@drawable/custom_search"
+        android:hint="Search"
+        android:imeOptions="actionSearch"
+        android:inputType = "text"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="21sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_search_student"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp" />
+
+</LinearLayout>

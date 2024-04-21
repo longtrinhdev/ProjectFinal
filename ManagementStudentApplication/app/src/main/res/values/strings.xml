@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Quản Lý Sinh Viên</string>
+
+    <string name="nav_home">Home</string>
+    <string name="nav_log_out">Log out</string>
+
+    <string name="nav_information_user">Personal information</string>
+    <string name="nav_change_password">Change password</string>
+
+    <!--    Khai báo mở đóng drawer-->
+    <string name="nav_drawer_open">Open navigation drawer</string>
+    <string name="nav_drawer_close">Close navigation drawer</string>
+</resources>

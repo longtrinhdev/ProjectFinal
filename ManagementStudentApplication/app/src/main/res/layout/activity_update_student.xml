@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@drawable/hinh2"
+    android:layout_gravity="center_horizontal"
+    tools:context=".activity_update_student">
+    <EditText
+        android:id="@+id/edt_update_msv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="21sp"
+        android:textColor="@color/black"
+        android:hint="Mã sinh viên" />
+
+    <EditText
+        android:id="@+id/edt_update_name_student"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:layout_marginTop="12dp"
+        android:inputType="textPersonName"
+        android:textSize="21sp"
+        android:hint="Họ và tên" />
+
+    <EditText
+        android:id="@+id/edt_update_QQ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:textSize="21sp"
+        android:layout_marginTop="12dp"
+        android:hint="Quê quán"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/edt_update_diem_toan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="12dp"
+        android:textSize="21sp"
+        android:ems="10"
+        android:hint="Điểm Toán"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/edt_update_diem_van"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/black"
+        android:textSize="21sp"
+        android:hint="Điểm Văn"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/edt_update_diem_anh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:layout_marginTop="12dp"
+        android:textSize="21sp"
+        android:hint="Điểm Anh"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/edt_update_xep_loai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:layout_marginTop="12dp"
+        android:textSize="21sp"
+        android:hint="Xếp Loại"
+        android:inputType="textPersonName"/>
+
+    <Button
+        android:id="@+id/btn_update_student_1"
+        android:layout_width="match_parent"
+        android:text="Update"
+        android:layout_marginTop="64dp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

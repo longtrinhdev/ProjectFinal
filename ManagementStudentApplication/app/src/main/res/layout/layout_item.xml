@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="3dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_avatar_teacher"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/avatar_teacher" />
+
+    <TextView
+        android:id="@+id/txt_full_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/img_avatar_teacher"
+        android:text="Hoàng Anh Tú"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/txt_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_full_name"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/img_avatar_teacher"
+        android:text="0987675643"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="-3dp"
+        android:layout_marginEnd="3dp"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:text="Update" />
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="3dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="19dp"
+        android:text="Delete" />
+
+
+</RelativeLayout>
